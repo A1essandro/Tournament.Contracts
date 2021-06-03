@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageId>TournamentConstructor.Contracts</PackageId>
+    <Version>$(Version)</Version>
+    <PackageVersion>$(PackageVersion)</PackageVersion>
+    <Authors>Alexander Yermakov</Authors>
+    <PackageTags>tournaments, competitions, match, sport</PackageTags>
+    <PackageLicenseUrl>https://github.com/A1essandro/TournamentConstructor.Contracts/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/A1essandro/TournamentConstructor.Contracts</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/A1essandro/TournamentConstructor.git</RepositoryUrl>
+    <RootNamespace>TournamentConstructor.Contracts</RootNamespace>
+  </PropertyGroup>
+</Project>
