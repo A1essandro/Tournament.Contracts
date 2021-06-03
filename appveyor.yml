@@ -9,6 +9,7 @@ before_build:
   - dotnet restore
 build:
   verbosity: normal
+  - dotnet pack Tournament.Contracts -v=n /p:Configuration=Release /p:PackageVersion=%APPVEYOR_BUILD_VERSION%
 artifacts:
 - path: '**\*.nupkg'
   name: NuGet Packages
