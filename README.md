@@ -1,1 +1,1 @@
-# TournamentConstructor.Contracts
+# Tournament.Contracts

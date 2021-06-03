@@ -1,4 +1,4 @@
-namespace TournamentConstructor.Contracts
+namespace Tournament.Contracts
 {
     public interface IPair<out T>
     {

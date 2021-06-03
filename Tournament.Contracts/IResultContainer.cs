@@ -1,4 +1,4 @@
-namespace TournamentConstructor.Contracts
+namespace Tournament.Contracts
 {
     /// <summary>
     /// Common interface for entities wich have result
