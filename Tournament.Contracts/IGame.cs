@@ -11,7 +11,7 @@ namespace Tournament.Contracts
     /// <typeparam name="TResultPoints"></typeparam>
     /// <typeparam name="TParticipant"></typeparam>
     public interface IGame<out TGame, TResult, out TResultPoints, TParticipant>
-        : ICompletable<TGame>, IContextContainer<IStage>, IResultContainer<TResult>, ISettableResultContainer<TGame, TResult>
+        : ICompletable<TGame>, IContextContainer<IStage>, ISettableResultContainer<TGame, TResult>
         where TResult : IGameResult<TResultPoints, TParticipant>
         where TResultPoints : IComparable
         where TParticipant : IParticipant

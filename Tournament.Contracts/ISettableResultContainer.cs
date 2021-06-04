@@ -8,15 +8,16 @@ namespace Tournament.Contracts
     /// </summary>
     /// <typeparam name="TThis">For better type-binding in specific implementation</typeparam>
     /// <typeparam name="TResult"></typeparam>
-    public interface ISettableResultContainer<out TThis, in TResult>
+    public interface ISettableResultContainer<out TThis, TResult> : IResultContainer<TResult>
         where TThis : ISettableResultContainer<TThis, TResult>
+
     {
 
         event Action<TThis> OnResultSet;
 
         bool HasResult { get; }
 
-        TResult Result { set; }
+        new TResult Result { get; set; }
 
     }
 
