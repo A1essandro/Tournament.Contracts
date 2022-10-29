@@ -10,7 +10,7 @@ namespace Tournament.Contracts
     /// <typeparam name="TParticipant"></typeparam>
     public interface IGameResult<out TPoints, out TParticipant> : IPointsContainer<TPoints>
         where TPoints : IComparable
-        where TParticipant : IParticipant
+        where TParticipant : IEquatable<TParticipant>
     {
 
         /// <summary>

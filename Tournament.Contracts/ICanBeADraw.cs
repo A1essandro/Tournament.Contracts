@@ -1,17 +1,14 @@
-namespace Tournament.Contracts
+namespace Tournament.Contracts;
+
+/// <summary>
+/// For entities that can be a draw (i.e. football game result)
+/// </summary>
+public interface ICanBeADraw
 {
 
     /// <summary>
-    /// For entities that can be a draw (i.e. football game result)
+    /// Is a draw
     /// </summary>
-    public interface ICanBeADraw
-    {
-
-        /// <summary>
-        /// Is a draw
-        /// </summary>
-        bool IsDraw { get; }
-
-    }
+    bool IsDraw { get; }
 
 }
